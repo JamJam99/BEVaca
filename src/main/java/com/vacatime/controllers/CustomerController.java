@@ -10,6 +10,10 @@ import com.vacatime.models.Package;
 import com.vacatime.services.BookingService;
 import com.vacatime.services.CustomerService;
 import com.vacatime.services.PackageService;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -37,6 +41,7 @@ public class CustomerController {
     @PostMapping
     public Customer registration(@Valid @RequestBody CustomerReqDto customer) {
         return customerService.saveCustomer(customer);
+
     }
 
 }

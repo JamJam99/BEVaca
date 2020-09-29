@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/package")
+@RequestMapping("package")
 public class PackageController {
 
     private final PackageService packageService;

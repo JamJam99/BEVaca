@@ -8,8 +8,8 @@ import com.vacatime.services.DestinationService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/destinations")
-public class DestinationController {
+@RequestMapping("destinations")
+public class  DestinationController {
 
     private final DestinationService destinationService;
 

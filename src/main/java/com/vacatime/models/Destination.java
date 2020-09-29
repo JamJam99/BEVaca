@@ -5,6 +5,7 @@ import java.util.Set;
 import javax.persistence.*;
 import lombok.*;
 
+
 @Data
 @NoArgsConstructor
 @Entity
@@ -16,6 +17,22 @@ public class Destination {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     private String city;
     private String description;
