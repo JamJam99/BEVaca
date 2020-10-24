@@ -20,8 +20,8 @@ public class DatabaseInit {
     @PostConstruct
     public void init() {
         Destination destination = new Destination();
-        destination.setCity("Paris");
-        destination.setDescription("description");
+        destination.setCity("");
+        destination.setDescription("");
         Destination destinationDb = destinationRepository.save(destination);
 
         Package aPackage = new Package();
